@@ -47,7 +47,9 @@ len('中文')   ---2
 ### list
 
 --- classmates = ['Michael', 'Bob', 'Tracy']
+
 --- classmates
+
 ['Michael', 'Bob', 'Tracy']
 
 变量classmates就是一个list。用len()函数可以获得list元素的个数：
@@ -58,12 +60,23 @@ len('中文')   ---2
 用索引来访问list中每一个位置的元素，记得索引是从0开始的：
 
 --- classmates[0]
+
 'Michael'
+
 --- classmates[1]
+
 'Bob'
+
 --- classmates[2]
+
 'Tracy'
+
+####如果超出范围会报错
+
 --- classmates[3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
 
 list是一种有序的集合，可以随时添加和删除其中的元素。
 
