@@ -46,16 +46,21 @@ len('中文')   ---2
 
 ### list
 
+list是一种有序的集合，可以随时添加和删除其中的元素。
+
+
 --- classmates = ['Michael', 'Bob', 'Tracy']
 
 --- classmates
 
 ['Michael', 'Bob', 'Tracy']
 
+
 变量classmates就是一个list。用len()函数可以获得list元素的个数：
 
 --- len(classmates)
 3
+
 
 用索引来访问list中每一个位置的元素，记得索引是从0开始的：
 
@@ -71,6 +76,7 @@ len('中文')   ---2
 
 'Tracy'
 
+
 ####如果超出范围会报错
 
 --- classmates[3]
@@ -78,11 +84,61 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 IndexError: list index out of range
 
-list是一种有序的集合，可以随时添加和删除其中的元素。
+
+如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素：
+
+--- classmates[-1]
+
+'Tracy'
 
 
+增删改查：
+
+增加
+
+--- classmates.append('Adam')
+
+--- classmates
+
+['Michael', 'Bob', 'Tracy', 'Adam']
+
+也可以把元素插入到指定的位置，比如索引号为1的位置：
+
+--- classmates.insert(1, 'Jack')
+
+--- classmates
+
+['Michael', 'Jack', 'Bob', 'Tracy', 'Adam']
+
+要删除list末尾的元素，用pop()方法：
+
+--- classmates.pop()
+
+'Adam'
+
+--- classmates
+
+['Michael', 'Jack', 'Bob', 'Tracy']
 
 
+要删除指定位置的元素，用pop(i)方法，其中i是索引位置：
+
+--- classmates.pop(1)
+
+'Jack'
+
+--- classmates
+
+['Michael', 'Bob', 'Tracy']
+
+
+要把某个元素替换成别的元素，可以直接赋值给对应的索引位置：
+
+--- classmates[1] = 'Sarah'
+
+--- classmates
+
+['Michael', 'Sarah', 'Tracy']
 
 
 ###注意
