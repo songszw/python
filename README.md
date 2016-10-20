@@ -42,8 +42,36 @@ len('中文')   ---2
 
 %x	十六进制整数
 
-
 在操作字符串时，我们经常遇到str和bytes的互相转换。为了避免乱码问题，应当始终坚持使用UTF-8编码对str和bytes进行转换。
+
+### list
+
+--- classmates = ['Michael', 'Bob', 'Tracy']
+--- classmates
+['Michael', 'Bob', 'Tracy']
+
+变量classmates就是一个list。用len()函数可以获得list元素的个数：
+
+--- len(classmates)
+3
+
+用索引来访问list中每一个位置的元素，记得索引是从0开始的：
+
+--- classmates[0]
+'Michael'
+--- classmates[1]
+'Bob'
+--- classmates[2]
+'Tracy'
+--- classmates[3]
+
+list是一种有序的集合，可以随时添加和删除其中的元素。
+
+
+
+
+
+
 ###注意
 
 * 在python缩进方面，按照约定俗成的管理，应该始终坚持使用4个空格的缩进
