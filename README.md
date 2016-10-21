@@ -159,30 +159,36 @@ else:             冒号必不可少
     
     
 eg: age = 3
+
 if age >= 18:
+
     print('your age is', age)
+    
     print('adult')
+    
 else:
+
     print('your age is', age)
+    
     print('teenager')
     
 #####elif  else if的简写，在写if判断时候，可以有多个elif，
 
-if <条件判断1>:
+if 条件判断1:
 
-    <执行1>
+    执行1
     
-elif <条件判断2>:
+elif 条件判断2:
 
-    <执行2>
+    执行2
     
-elif <条件判断3>:
+elif 条件判断3:
 
-    <执行3>
+    执行3
     
 else:
 
-    <执行4>
+    执行4
     
     
     
