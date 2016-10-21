@@ -146,6 +146,50 @@ IndexError: list index out of range
 #####tuple是一个有序列表，与list类似，但是tuple一旦初始化不可修改。
 因为元组一旦生成不能改变，所以它没有append和insert，pop等方法，但是相对list来说，也更加安全。
 
+
+###条件判断
+
+基本语法
+
+if 条件 :         冒号必不可少
+    条件成立后执行的demo
+else:             冒号必不可少
+    条件不成立时候所需要执行的demo
+    
+    
+    
+eg: age = 3
+if age >= 18:
+    print('your age is', age)
+    print('adult')
+else:
+    print('your age is', age)
+    print('teenager')
+    
+#####elif  else if的简写，在写if判断时候，可以有多个elif，
+
+if <条件判断1>:
+
+    <执行1>
+    
+elif <条件判断2>:
+
+    <执行2>
+    
+elif <条件判断3>:
+
+    <执行3>
+    
+else:
+
+    <执行4>
+    
+    
+    
+    
+    
+    
+
 ###注意
 
 
