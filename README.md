@@ -148,6 +148,7 @@ IndexError: list index out of range
 
 ###注意
 
+
 * 在python缩进方面，按照约定俗成的管理，应该始终坚持使用4个空格的缩进
 * 在python中是区分大小写的，如果写错了大小写那么程序就会报错
 
