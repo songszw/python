@@ -28,7 +28,7 @@ len('中文')   ---2
 
 ### 格式化
 
-在Python中，采用的格式化方式和C语言是一致的，用%实现，举例如下：
+#####在Python中，采用的格式化方式和C语言是一致的，用%实现，举例如下：
 --- 'Hello, %s' % 'world'
 'Hello, world'
 --- 'Hi, %s, you have $%d.' % ('Michael', 1000000)
@@ -42,7 +42,7 @@ len('中文')   ---2
 
 %x	十六进制整数
 
-在操作字符串时，我们经常遇到str和bytes的互相转换。为了避免乱码问题，应当始终坚持使用UTF-8编码对str和bytes进行转换。
+#####在操作字符串时，我们经常遇到str和bytes的互相转换。为了避免乱码问题，应当始终坚持使用UTF-8编码对str和bytes进行转换。
 
 ### list
 
@@ -56,13 +56,13 @@ list是一种有序的集合，可以随时添加和删除其中的元素。
 ['Michael', 'Bob', 'Tracy']
 
 
-变量classmates就是一个list。用len()函数可以获得list元素的个数：
+#####变量classmates就是一个list。用len()函数可以获得list元素的个数：
 
 --- len(classmates)
 3
 
 
-用索引来访问list中每一个位置的元素，记得索引是从0开始的：
+#####用索引来访问list中每一个位置的元素，记得索引是从0开始的：
 
 --- classmates[0]
 
@@ -77,7 +77,7 @@ list是一种有序的集合，可以随时添加和删除其中的元素。
 'Tracy'
 
 
-####如果超出范围会报错
+#####如果超出范围会报错
 
 --- classmates[3]
 Traceback (most recent call last):
@@ -85,16 +85,16 @@ Traceback (most recent call last):
 IndexError: list index out of range
 
 
-如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素：
+#####如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素：
 
 --- classmates[-1]
 
 'Tracy'
 
 
-增删改查：
+###增删改查：
 
-增加
+#####增加
 
 --- classmates.append('Adam')
 
@@ -102,7 +102,7 @@ IndexError: list index out of range
 
 ['Michael', 'Bob', 'Tracy', 'Adam']
 
-也可以把元素插入到指定的位置，比如索引号为1的位置：
+#####也可以把元素插入到指定的位置，比如索引号为1的位置：
 
 --- classmates.insert(1, 'Jack')
 
@@ -110,7 +110,7 @@ IndexError: list index out of range
 
 ['Michael', 'Jack', 'Bob', 'Tracy', 'Adam']
 
-要删除list末尾的元素，用pop()方法：
+#####要删除list末尾的元素，用pop()方法：
 
 --- classmates.pop()
 
@@ -121,7 +121,7 @@ IndexError: list index out of range
 ['Michael', 'Jack', 'Bob', 'Tracy']
 
 
-要删除指定位置的元素，用pop(i)方法，其中i是索引位置：
+#####要删除指定位置的元素，用pop(i)方法，其中i是索引位置：
 
 --- classmates.pop(1)
 
@@ -132,7 +132,7 @@ IndexError: list index out of range
 ['Michael', 'Bob', 'Tracy']
 
 
-要把某个元素替换成别的元素，可以直接赋值给对应的索引位置：
+#####要把某个元素替换成别的元素，可以直接赋值给对应的索引位置：
 
 --- classmates[1] = 'Sarah'
 
@@ -140,6 +140,11 @@ IndexError: list index out of range
 
 ['Michael', 'Sarah', 'Tracy']
 
+
+### tuple
+
+#####tuple是一个有序列表，与list类似，但是tuple一旦初始化不可修改。
+因为元组一旦生成不能改变，所以它没有append和insert，pop等方法，但是相对list来说，也更加安全。
 
 ###注意
 
