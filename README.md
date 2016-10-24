@@ -252,6 +252,7 @@ break语句可以在循环过程中直接退出循环，而continue语句可以�
 如果key不存在，那么dict会报错。为了避免key不存在报错，需要判断key值是否存在
 
 ***第一种***可以通过in来判断key是否存在，例如上面的a中， ‘song’ in a    ---true
+
 ***第二种***可以通过get方法来判断key值是都存在，如果key不存在，可以返回none，或者返回自定义的value，例如
 
 a.get('nothing')        //不存在，返回none，注意：返回None的时候Python的交互式命令行不显示结果。
