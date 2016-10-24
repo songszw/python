@@ -200,6 +200,46 @@ if x:
 只要x是非零数值、非空字符串、非空list等，就判断为True，否则为False。
     
 
+### 循环
+#####Python的循环有两种，一种是for...in循环，另一种是while循环
+
+eg：
+
+names = ['Michael', 'Bob', 'Tracy']
+
+for name in names:
+
+    print(name)
+    
+执行这段代码，会依次打印names的每一个元素：
+
+Michael
+
+Bob
+
+Tracy
+
+#####所以for x in ...循环就是把每个元素代入变量x，然后执行缩进块的语句。
+
+#### range（）就可以生成整数序列的函数
+
+eg：
+sum = 0
+for x in range(5):
+    sum = sum + x
+    print(sum)
+    
+0
+
+1
+
+3
+
+6
+
+10
+
+
 
     
 
