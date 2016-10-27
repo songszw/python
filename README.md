@@ -2,6 +2,8 @@
 python笔记
 
 ##BIF Built in function 也就是内置函数，我理解为系统自带的函数方法，拿来直接用就可以
+在shell中可以用dir(__builtins__)查询内置函数
+如果要知道一个内置函数的用法，可以用help(函数名)来获取用法
 
 
 ### 退出    exit()
