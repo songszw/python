@@ -1,6 +1,9 @@
 # python
 python笔记
 
+##BIF Built in function 也就是内置函数，我理解为系统自带的函数方法，拿来直接用就可以
+
+
 ### 退出    exit()
 
 ### 输出（打印指定内容）    print('')
