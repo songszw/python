@@ -107,6 +107,12 @@ IndexError: list index out of range
 
 ['Michael', 'Bob', 'Tracy', 'Adam']
 
+--- classmates.extend(['a','b'])
+
+---classmates
+
+['Michael', 'Bob', 'Tracy', 'Adam','a','b']
+
 #####也可以把元素插入到指定的位置，比如索引号为1的位置：
 
 --- classmates.insert(1, 'Jack')
