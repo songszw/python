@@ -338,7 +338,10 @@ not 1           false
 
 not 0           true
 
- 
+
+### 字符串
+
+####首字母大写 capitalize
 
 ###注意
 
