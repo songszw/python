@@ -343,6 +343,8 @@ not 0           true
 
 ####首字母大写 capitalize
 
+###闭包
+
 ###注意
 
 
