@@ -10,6 +10,8 @@ elif 70>gt>=60:
     print('d')
 elif 60>gt>=0:
     print ('f')
+    
+    
 
     
     
