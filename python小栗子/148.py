@@ -4,7 +4,7 @@ def show_result(start_dir):
     lines = 0
     total = 0
     text = ""
-    
+   
     for i in source_list:
         lines = source_list[i]
         total += lines
