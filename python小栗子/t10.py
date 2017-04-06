@@ -7,5 +7,6 @@ def hanoi(num,x,y,z):
         print(x,'-->',z)
         hanoi(num-1,y,x,z)
 num = int(input('请输入汉诺塔的层数：'))
+
 hanoi(num,'x','y','z')
         
