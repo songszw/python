@@ -7,6 +7,7 @@ def show_result(start_dir):
    
     for i in source_list:
         lines = source_list[i]
+        
         total += lines
         text += "【%s】源文件 %d 个，源代码 %d 行\n" % (i, file_list[i], lines)
     title = '统计结果'
